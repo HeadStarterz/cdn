@@ -1,7 +1,14 @@
 $(function() {
- $('a[href^="mailto:"]').each(function() {
-  this.href = this.href.replace('[at]', '@').replace(/\[dot\]/g, '.');
-  // Remove this line if you don't want to set the email address as link text:
-  this.innerHTML = this.href.replace('mailto:', '');
- });
+    $('a[href^="mailto:"]').each(function() {
+        var linkText = this.innerHTML;
+        var href = this.href;
+
+        if (linkText.includes('[at]') && linkText.includes('[dot]')) {
+            var updatedLinkText = linkText.replace('[at]', '@').replace(/\[dot\]/g, '.');
+            this.innerHTML = updatedLinkText;
+        }
+
+        var newHref = href.replace('[at]', '@').replace(/\[dot\]/g, '.');
+        this.href = "mailto:" + newHref.replace('mailto:', '');
+    });
 });
