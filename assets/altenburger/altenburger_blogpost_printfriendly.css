@@ -1,0 +1,105 @@
+/* -----  CV Custom CSS ------ */
+
+#pf-body #pf-header-img {
+    margin: 0 0 0 auto !important;
+    float: right;
+    padding-bottom: 22px !important;
+    max-width: 200px;
+}
+
+#pf-content .blockImage, #pf-content img.block {
+    width: 100% !important;
+}
+
+#pf-title {
+    margin-bottom: 7rem;
+}
+
+#print-no {
+    color: #ffffff    
+}
+
+#printfriendly p {
+    margin-bottom: 0.3rem !important;
+}
+
+/* This will align images to the left */
+
+#printfriendly img {
+    float: left;
+    margin-top: 12px;
+    margin-bottom: 22px;
+    margin-right: 0px;
+}
+
+/* This will style the Header Information */
+
+#pf-primary-img {
+    margin-bottom: 22px !important;
+    width: 100% !important;
+}
+#pf-tagline {
+    margin-bottom: 22px !important;
+    color: #ffffff !important;
+}
+
+/* Changes font family and size */
+
+#printfriendly {
+    font-family: Palatino Linotype, serif;
+    font-size: 14px;
+    color: #004f59 !important;
+}
+
+#printfriendly a { 
+    color: #004f59 !important;
+}
+
+
+/* Changes header color */
+
+#printfriendly h1, 
+#printfriendly h2,
+#printfriendly h3,
+#printfriendly h4 {
+    color: #004f59 !important;
+}
+
+/* Changes header url */
+#pf-src-icon {
+    display: none;
+}
+
+#pf-src-url {
+    color: #004f59 !important;
+    font-weight: bold !important;
+}
+
+#pf-src-url::before {
+  font-weight: bold;
+  color: #004f59;
+  content: "www.";
+}
+
+/* Style Blockquotes */
+.quote-print-only {
+    margin: 1rem 0 1rem 1.5rem;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    border-left: 2px solid #ffd700;
+    color: #004f59 !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+}
+
+#printfriendly blockquote {
+    margin: 1rem 0 1rem 1.5rem;
+    padding: 0 0.5rem;
+    font-size: 1rem;
+    border-left: 2px solid #ffd700 !important;
+    color: #004f59 !important;
+    border-top: none !important;
+    border-right: none !important;
+    border-bottom: none !important;
+}
