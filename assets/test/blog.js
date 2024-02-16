@@ -1,4 +1,5 @@
- document.addEventListener('DOMContentLoaded', function() {
+//test
+document.addEventListener('DOMContentLoaded', function() {
     const observerConfig = { childList: true, subtree: true };
 
     // Encapsulate the layout initialization logic
